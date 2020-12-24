@@ -1,0 +1,49 @@
+<html>
+  <head>
+    <title>Detect the Iceberg</title>
+    <style>
+	img {
+  	display: block;
+  	margin-left: auto;
+  	margin-right: auto;
+	width: 60%;
+	padding-top:0%;
+	}
+	
+
+	.header {	
+			top:0;	
+			margin:0px;
+			left: 0%;
+			right: 0px;
+			position: fixed;
+			background: transparent;
+			color: #ffffff;
+			overflow: hidden;
+			padding: 0.5%;
+			font-size: 3.5vw;
+			width: 100%;
+			padding-left:0px;
+			text-align: center;
+		}
+    </style>
+  </head>
+  <body style="background-image:url({{url_for('static',filename='images/road2.jpg')}});background-position: center;background-repeat: no-repeat;
+			background-size: cover;">
+  <div class="header">
+    <div style="align:center"><b>Lane Detection using Computer Vision</b></div>
+	
+  </div>
+	
+		<div style="margin-top:12%">
+		
+			<img id="bg" class="center" src="{{ url_for('video_feed') }}">
+			<!img id="bg" class="center" src="samp.png">
+		</div>
+	
+	
+	
+  </body>
+
+  
+</html>
